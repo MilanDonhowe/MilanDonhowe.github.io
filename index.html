@@ -3,11 +3,43 @@
     <head>
         <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <meta charset="utf-8"/>
-        <title>Bear world!</title>
+        <link rel="stylesheet" type="text/css" href="Style/styleIndex.css" />
+        <link rel="icon" href="favicon.ico" />
 
+        <title>Magical Wonder!</title>
     </head>
-
     <body>
-      <h3>We have lift off!</h3>
+      <div id="wide">
+      <h1><div id="name">MILAN DONHOWE: </div>    <div id="joke"></div></h1>
+      
+      <div id="bio">
+        <p>Hello, I am Milan Donhowe, a young computer programmer from Portland Oregon who also does:</p>
+            <ul>
+                <li>Speech and Debate : NSDA Cordinator and Competitor in multiple events (Humerous Interp, Parlimentary Debate, and After Dinner Speaking (and a few other events).</li>
+                <li>Cross Country : Ameature Runner!</li>
+                <li>Pigmice Robotics Team 2733 : Occasional writer.</li>
+                <li>Poet : I did a poetry slam once.  My poem was described as a 'c-RHYME to the community'.</li>
+            </ul>
+      </div>
+      <h3>Check out my Projects!  (They are really neat)</h3>
+      <h4 class="project"><a href="https://github.com/MilanDonhowe/studentSelect">Student Selector  -   Chrome Extension.</a></h4>
+      <p>A Chrome Extension for randomly selecting students.</p>
+      <img src="https://raw.githubusercontent.com/MilanDonhowe/studentSelect/master/images/logo96.png">
+      <h4 class="project"><a href="https://github.com/MilanDonhowe/Poll-Boy">Poll-Boy  -   Discord Bot</a></h4>
+      <p>A discord chat-bot for text-based polling.</p>
+      <img src='https://github.com/MilanDonhowe/ReadmeImages/blob/master/PollBoyExample.gif?raw=true'>
+      <h4 class="project"><a herf="https://github.com/MilanDonhowe/DoltsHome">Dolt's Home   -   Unity 3D game.</a></h4>
+      <p>A Unity 3D game made during Sophmore Year Games Programming.</p>
+      <img src="https://raw.githubusercontent.com/MilanDonhowe/ReadmeImages/master/DoltImages/dolt_1.gif">
+      <h4 class="project"><a href="https://milandonhowe.github.io/beargame/">Bear Platform Game    -   A School Project from Freshman Year.</a></h4>
+      <!--<iframe id="if" src="https://milandonhowe.github.io/beargame/">Your browser does not support iframe.</iframe>-->
+      <h4 class="project">And more to come!</h4>
+    </div>
+      <script>
+        //Randomly Pick Descriptor
+        let descriptor = document.getElementById('joke');
+        let choices = ['Human Person', 'Consumer of Food', 'Breather of Air', 'Fan of Star Wars', 'Pepsi = Cola = True', 'I hope I remember to delete this line', 'Fan of Salt & Vinegar Potato Chips', 'Owner of kittens!', 'If html5 is so good how come there isn\'t a html6?', 'Ukulele Player', 'StackOverflow Question Asker', 'Can I list googling as a job skill?'];
+        descriptor.textContent = choices[Math.floor(Math.random() * choices.length)];
+      </script>
     </body>
 </html>
