@@ -1,0 +1,16 @@
+@import "{{ site.theme }}";
+/*include my custom css now*/
+
+.page-header{
+		color: #FFF;
+		background-color: #b7f0f4;
+		background-image: linear-gradient(120deg, #5775ed, #57c0ed);
+}
+
+.main-content {
+	color:#57c0ed;
+}
+
+body {
+	color:rgb(51,51,51);
+}
