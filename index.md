@@ -3,8 +3,5 @@ title: Milan Donhowe
 ---
 
 # Hi there!
-My name is Milan, and I do a bunch of stuffs on the Internet and then write about them here.  Neat stuff, right?
 
-I know I know, generic theme and all but what can you do in this day and age?  Be creative?
-
-También en mi tiempo libre practico Español y toco la guitarra.
+My name is Milan, and I am Senior at Cleveland High School who likes to partake in some high-stakes hijinks.  Such hiijinks include: being the **National Speech & Debate Coordinator** for the Cleveland Cannibals Speech & Debate team, mentoring for an Introduction to Programming class, developing some neat programs and practicing some good old Spanish.
