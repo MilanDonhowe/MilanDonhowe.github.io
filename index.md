@@ -2,8 +2,8 @@
 title: Milan Donhowe
 ---
 
-# Milan Donhowe : Programmer, Speaker, Student and Citizen.
-Basically I do stuffs on the Internet and then write about them here.  Neat stuff, right?
+# Hi there!
+My name is Milan, and I do a bunch of stuffs on the Internet and then write about them here.  Neat stuff, right?
 
 I know I know, generic theme and all but what can you do in this day and age?  Be creative?
 

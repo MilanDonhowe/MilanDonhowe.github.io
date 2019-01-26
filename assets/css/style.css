@@ -2,6 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+
 .page-header{
 	    text-align: center;
 		color: #FFF;
