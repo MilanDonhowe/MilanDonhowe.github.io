@@ -1,17 +1,7 @@
+---
+---
+
 @import "{{ site.theme }}";
-/*include my custom css now
-
-.main-content {
-	color:#57c0ed;
-}
-
-body {
-	color:rgb(51,51,51);
-}
-
-
-*/
-
 .page-header{
 	    text-align: center;
 		color: #FFF;
