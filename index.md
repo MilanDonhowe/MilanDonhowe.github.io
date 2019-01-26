@@ -1,6 +1,5 @@
 ---
 title: Milan Donhowe
-layout: default
 ---
 
 # Milan Donhowe : Programmer, Speaker, Student and Citizen.
