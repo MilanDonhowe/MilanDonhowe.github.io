@@ -14,6 +14,3 @@ You can send me an [email](mailto:milanaugust@gmail.com) at milanaugust@gmail.co
 
 Since all personal websites must have an inspirational quote here is mine: 
 *"O I am slain!"*(Polonius, Act III, Scene 4, Line 30) 
-
-
-Jekyll Theme used: https://github.com/pages-themes/cayman
