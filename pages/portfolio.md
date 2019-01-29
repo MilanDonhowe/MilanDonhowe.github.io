@@ -1,6 +1,7 @@
 ---
 title: Portfolio
 description: A list of my programming projects
+layout: portfolio_layout
 ---
 
 
