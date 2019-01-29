@@ -38,7 +38,7 @@ And/Or you can check out the [source code here](https://github.com/MilanDonhowe/
 ### **A Slimy Quest (Gamemaker Studio 1.4)**
 ![Image of Slimy Character falling down](https://raw.githubusercontent.com/MilanDonhowe/HybridAdventure/master/sprites/gifs/playerREADME%20(1).gif)
 
-A mix of a basic platforming and pong game.  Made in 1 month for the 2018 GitHub GameOFF.  My game tied for 19th overall out of 328 entries.  Most notably I also scored 11th place for Theme Interpretation.  The Game's source code may be [viewed here](https://github.com/MilanDonhowe/SlimyQuest), the entry for the GameOff can be [viewed here](https://itch.io/jam/game-off-2018/rate/334522) and if you wish, [you can play it here](https://milandonhowe.itch.io/a-slimy-quest).
+A mix of a basic platforming and pong game.  Made in 1 month for the 2018 GitHub GameOFF.  **My game placed 19th overall out of 328 entries**.  Most notably I also scored 11th place for the category of Theme Interpretation.  The Game's source code may be [viewed here](https://github.com/MilanDonhowe/SlimyQuest), the entry for the GameOff can be [viewed here](https://itch.io/jam/game-off-2018/rate/334522) and if you wish, [you can play it here](https://milandonhowe.itch.io/a-slimy-quest).
 
 
 ### **Dolt's Home (Unity 3D)**
@@ -54,7 +54,7 @@ A simple platforming game I made Freshman year for my Introduction to Programmin
 ## **Miscellaneous Programming Projects**
 
 ### **Comic Sans Bookmarklet (JavaScript)**
-A small url-embedded block of JavaScript code that changes all the fonts on a given web-page to Comic Sans MS.  You can install it by simply dragging the following <a href="javascript:(function(){ function changeElement(tag, font){ for (i=0;i<document.getElementsByTagName(tag).length;i++){ document.getElementsByTagName(tag)[i].style.fontFamily = font; } } var font = "Comic Sans MS"; document.getElementsByTagName('body')[0].style.cssText = "font-family: " + font + ";"; changeElement('span', font); changeElement('div', font); changeElement('li', font); changeElement('p', font); changeElement('h1', font); changeElement('h2', font); changeElement('h3', font); changeElement('h4', font); changeElement('h5', font); changeElement('h6', font); })();">link</a> into your bookmark bar and then clicking it to run the program.  (Given that your Browser has JavaScript enabled.)
+A small url-embedded block of JavaScript code that changes all the fonts on a given web-page to Comic Sans MS.  You can find the code [here](https://github.com/MilanDonhowe/bookmarklets).
 
 ![image of the program working](../assets/images/bookmarklet.gif)
 
