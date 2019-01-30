@@ -6,6 +6,35 @@ $header-bg-color: #5775ed !default;
 $header-bg-color-secondary: #57c0ed !default;
 $section-headings-color: #57c0ed !default;
 $body-text-color: #333333 !default;
-
+$animationTime: 4s;
 
 @import "{{ site.theme }}";
+
+// on load animations
+
+@-moz-keyframes onload {
+    from {margin:-9000px;}
+    to {margin:0px;}
+}
+
+@-webkit-keyframes onload {
+    from {margin:-9000px;}
+    to {margin:0px;}
+}
+
+@keyframes onload {
+    from {margin:-9000px;}
+    to {margin:0px;}
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $body-text-color;
+    -moz-animation: onload $animationTime;
+    -webkit-animation: onload $animationTime; 
+    animation: onload $animationTime;
+  }
