@@ -1,12 +1,11 @@
 // Add scrolling revealing stuff
 
 // make an array of all my elements on the page.
-let myProjects = [
-	document.querySelectorAll('h1'),
-	document.querySelectorAll('p'),
-	document.querySelectorAll('h3'),
-	document.querySelectorAll('img')
-]
 
+//test that the code runs
+console.log("Running script...");
 
-ScrollReveal().reveal(myProjects);
+ScrollReveal().reveal(document.querySelectorAll('h1'));
+ScrollReveal().reveal(document.querySelectorAll('h3'));
+ScrollReveal().reveal(document.querySelectorAll('p'));
+ScrollReveal().reveal(document.querySelectorAll('img'));
