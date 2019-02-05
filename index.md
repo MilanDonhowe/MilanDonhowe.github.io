@@ -6,7 +6,13 @@ description: A person on the Internet.
 
 # Hi there!
 
-My name is Milan, and I am Senior at Cleveland High School who likes to partake in some high-stakes hijinks.  Such hijinks include: being the **National Speech & Debate Coordinator** for the Cleveland Cannibals Speech & Debate team, **mentoring for an Introduction to Programming class**, running Cross Country and **developing some neat programs**.  In my free-time I like to play guitar, practice Spanish, and explore the Internet.
+My name is Milan, and I am Senior at Cleveland High School who likes to partake in some high-stakes hijinks.  Such hijinks include: 
+
+* Being the **National Speech & Debate Coordinator** for the Cleveland Cannibals Speech & Debate team.
+* **Mentoring for an Introduction to Programming class**.
+* Running Cross Country and **developing some neat programs**.  
+
+In my free-time I like to play guitar, practice Spanish, and explore the Internet.
 
 ## Want to contact me?
 
