@@ -5,11 +5,11 @@
 console.log("Running script...");
 
 // the elements I want
-let Elems = document.querySelectorAll('h1:not(.project-name), h3, p, img');
+let STUFF = document.querySelectorAll('h1:not(.project-name) h2:not(.project-name), h3, p, img');
 
 
 
-ScrollReveal().reveal(Elems, {
+ScrollReveal().reveal(STUFF, {
 	distance: "50px",
 	duration: 600,
 	easing: 'ease-in',
