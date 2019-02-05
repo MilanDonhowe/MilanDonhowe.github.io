@@ -5,7 +5,7 @@
 console.log("Running script...");
 
 // the elements I want
-window.onload() =  function(){
+window.onload =  function(){
 
 let STUFF = document.querySelectorAll('h1:not(.project-name), h2:not(.project-name), h3, p, img');
 
