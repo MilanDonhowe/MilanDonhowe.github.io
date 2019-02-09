@@ -1,6 +1,6 @@
 // Add scrolling revealing stuff
 
-
+/*
 //test that the code runs
 console.log("Running script...");
 
@@ -20,3 +20,4 @@ ScrollReveal().reveal(STUFF, {
 });
 
 }
+*/
