@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Happy Mother's Day!</title>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+
+<style>
+#happy {
+	font-family: 'Baloo Bhai', cursive;
+	padding-top:50px;
+	text-indent: 120px;
+	text-align:center;
+	white-space:pre;
+}
+
+</style>
+<body>
+<script>
+'use scrict';
+
+let change = document.getElementById("happy");
+let message = `Happy Mothers Day!\r\n
+You\'re the best Mom a person could have and that\'s a fact. \r\n 
+You make amazing cookies 🍪, teach kids great skills 👩‍🏫, and film engaging movies 🎥.
+
+
+Me and Theo are incredibly grateful to you.
+So..
+Thank you Mom :)
+
+- Milan
+
+`;
+let letter = 0;
+
+
+
+setInterval(function(){
+
+	if (letter < message.length) {
+		document.getElementById("happy").textContent += message[letter]
+		letter += 1;
+	}
+
+}, 30); 
+
+
+
+</script>
+
+  <div id="happy">
+  </div>
+
+
+</body>
+</head>
+</html>
