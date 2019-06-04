@@ -1,25 +1,24 @@
 'use strict';
 
 
-//let frames = ["🌍", "🌏", "🌎"];♧♤♣♥
-//let frames = ['👾_____', '_👾___', '__👾___', '___👾__', '____👾_', '_____👾'];
 
-
-let frames = ["■"];
+let frames = ["■■■■■■■PROGRAMMING IS COOL■■■■■■■"];
 let currentFrame = 0;
 let direction = 1;
-let maxSize = 15;
+let maxSize = frames.length;
 
 function AnimateUrl(){
     let getFrame = () => {
-        let frame = "■"
-        for (let i=0; i < currentFrame;i++){
-            frame = frame.concat("■");
+        //let frame = "■"
+        for (let i=0; i < currentFrame; i++){
+            frame = frame.concat(frames[i]);
         }
         return frame;
     }
+
     location.hash = getFrame()
     currentFrame += direction;
+    
     if (currentFrame >= maxSize){
         // go backward
         direction = -1;
