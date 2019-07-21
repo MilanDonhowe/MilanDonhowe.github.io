@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<!--
+    HTML5 radio button UI for the Minecraft AP Test
+    Test written by Sam Gilbert & Mason Bulling (I think)
+    JavaScript used here by Milan Donhowe
+    7.21.2019
+-->
+
+<head>
+    <style>
+    *{
+        font-family: 'Roboto', sans-serif;
+    }
+    p {
+        font-weight:bold;
+    }
+
+    table {
+        border:2px solid black;
+    }
+    td{
+        border:2px solid black;
+    }
+    </style>
+    <title>Minecraft AP Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href="https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <p>
+        You must have JavaScript enabled to use this app, sorry!
+    </p>
+    <script>
+        'use strict';
+
+
+        // the questions
+        var questions = [
+            ["1. One reason why a diamond axe may be a better weapon than a diamond sword is because a diamond axe", "a) Deals more damage per hit", "b) Has a higher attack speed", "c) Has a greater durability", "d) Requires fewer resources to craft", "e) Can receive mending through an enchanting table, whereas the sword cannot"],
+            ["2. A hoe is enchanted with 5 levels of experience. What is the chance that the hoe will receive only unbreaking?", "a) 30%", "b) 60%", "c) 65%", "d) 75%", "e) 100%"],
+            ["3. One bone can be used to craft how many bone meal?", "a) 1", "b) 2", "c) 3", "d) 4", "e) 5"],
+            ["4. Two stone pickaxes, one with 40 durability and the other with 60 durability, are combined in a crafting table. How much durability will the resulting stone pickaxe have?", "a) 40", "b) 60", "c) 100", "d) 105", "e) 132"],
+            ["5. Marcus Persson is the creator of Minecraft. What nickname is he commonly given?", "a) Dinnerbone", "b) Grum", "c) Jeb", "d) Notch", "e) ProfMobius"],
+            ["6. The following command is executed:\n<bold>/tp steve ~5 ~ ~</bold>\n In what direction will steve move?", "a) Positive X", "b) Negative X", "c) Negative Y", "d) Positive Z", "e) Negative Z"],
+            ["7. When creating portals, one block in the nether corresponds to how many blocks in the overworld?", "a) 3", "b) 7", "c) 8", "d) 15", "e) 16"],
+            ["Questions 8-9 refer to the following information <br> <table><tr><th>Data for Food in Minecraft</th></tr><tr><td>Saturation Restored</td><td>12.8</td></tr><tr><td>Saturation Ratio</td><td>1.6</td></tr></table><br><br>Saturation Ratio = Saturation Restored ÷ Hunger Points Provided<br><br> 8. How many hunger points does this food provide?", "a) 4", "b) 5", "c) 6", "d) 8", "e) 10"],
+            ["9. What food has the properties depicted in the table?", "a) Baked potato", "b) Enchanted golden apple (notch apple)", "c) Golden apple", "d) Rabbit stew", "e) Steak"],
+            ["10. What resource do zombie pigmen drop?", "a) Coal", "b) Diamond", "c) Gold", "d) Iron", "e) Quartz"],
+            ["11. How many redstone is needed to craft a clock?", "a) 0", "b) 1", "c) 3", "d) 4", "e) 5"],
+            ["12. How is a bottle o’ enchanting obtained?", "a) Crafting", "b) Enchanting", "c) End city chests", "d) Stronghold chests", "e) Trading"],
+            ["13. On what kind of tree do cocoa beans generate?", "a) Acacia", "b) Birch", "c) Dark oak", "d) Jungle", "e) Swamp"],
+            ["14. Adding redstone to a potion causes what?", "a) It increases the duration of the potion", "b) It increases the strength of the potion", "c) It creates an awkward potion", "d) It negates the effect (for example, a potion of healing turns to a potion of damage)", "e) Redstone cannot be added to a brewing stand"],
+            ["15. Which block will not move when there is air below it?", "a) Anvil", "b) Dragon egg", "c) Gravel", "d) Sand", "e) Stone slab"],
+            ["16. Which effect will increase mining speed?", "a) Absorption", "b) Haste", "c) Mining fatigue", "d) Slowness", "e) Speed"],
+            ["17. What (if anything) is wrong with the following client command? /tp 4000000 0 0", "a) X=4,000,000 is outside the world", "b) Y=0 is in the void", "c) The player to be teleported is not specified", "d) Unloaded chunks cannot be teleported to", "e) Nothing; the command will execute without error"],
+            ["18. What kind of villager wears a white robe?", "a) Butcher", "b) Farmer", "c) Fisherman", "d) Librarian", "e) Priest"],
+            ["19. How many sticks can be crafted from one wood (not wooden plank)?", "a) 1", "b) 2", "c) 4", "d) 6", "e) 8"],
+            ["20. In what game do players try to mine the blocks under their opponents?", "a) Bed wars", "b) Hunger games", "c) Prison", "d) Spleef", "e) Survival games"],
+            ["21. Which is not a type of minecart that can be crafted?", "a) Chest", "b) Furnace", "c) Hopper", "d) Spawner", "e) TNT"],
+            ["Question 22-23 refer to the following list<br> <ol><li>I. Blaze Powder</li><li>II. Charcoal/Coal</li><li>III. Gunpodwer</li></ol><br>22. Which of these items are needed to craft a fire charge?", "a) I only", "b) III only", "c) I and III only", "d) II and III only", "e) I, II, and III"],
+            ["23. Which of these items can be used as fuel?", "a) I only", "b) II only", "c) I and II only", "d) II and III only", "e) I, II, and III"],
+            ["24. In the nether, nether quartz ore is about as abundant as which ore in the overworld?", "a) Coal", "b) Iron", "c) Redstone", "d) Gold", "e) Diamond"],
+            ["25. Suppose a torch (light level 14) is placed in a large flat cavern at (x,y,z)=(1,100,1). What is the light level at (4,100,-3), assuming no other light sources?", "a) 7", "b) 9", "c) 10", "d) 11", "e) 12"],
+            ["26. The default flat surface area enclosed by the world border is about how many blocks?", "a) 2.3*10^14", "b) 9.0*10^14", "c) 1.8*10^15", "d) 3.6*10^15", "e) 1.8*10^17"],
+            ["Questions 27-28 refer to the following<br>\"“It’s more magical than that! It automatically opens and turns towards players who get close\”.<br>27. Who said the quote?", "a) Anton Albiin", "b) Daniel Wustenhof", "c) David Marby", "d) Erik Broes", "e) Markus Persson"],
+            ["28. What block is being described", "a) Chest", "b) Command block", "c) Daylight sensor", "d) Enchanting table", "e) Nether portal"],
+            ["29. Assume roll=2 and the p-value of an unstackable item is .185. What is the chance that exactly one item appears?", "a) .185", "b) (.185)^2", "c) (2)*(.185)*(.815)", "d) .630", "e) (.815)^2-(.185)^2"],
+            ["30. What is the average y-coordinate for the surface of an ocean biome?", "a) 60", "b) 63", "c) 66", "d) 69", "e) 72"],
+            ["Questions 31-32 refer to the following<br>\“I never fail to get a little bit excited when I mine into a vein of iron ore. After a while in every Minecraft world, coal isn’t really worth picking up any more because it’s so easy to find when you need it. But I never miss an opportunity even when I’m being pursued by a horde of hissing creepers to grab a bit of iron\”.<br>31. Who said the quote?", "a) Daniel Frisk", "b) Duncan Geere", "c) Martin Johansson", "d) Nathan Adams", "e) Tomas Alaeus"],
+            ["32. What blast resistance do all ore blocks have?", "a) 15", "b) 17.5", "c) 25", "d) 30", "e) 45"],
+            ["Question 33-34 refer to the following commands in a default redstone-ready preset world<br>/fill 6 1 7 4 9 2 minecraft:dirt<br>/fill 7 8 3 6 5 1 minecraft:stone<br>33. After execution, how many dirt blocks will be in the world?", "a) 77", "b) 80", "c) 152", "d) 154", "e) 162"],
+            ["34. After execution, how many stone blocks will be in the world?","a) 6", "b) 12", "c) 24", "d) 30", "e) 40"],
+            ["35. Which dye cannot be obtained without crafting?", "a) Light blue", "b) Light grey", "c) Magenta", "d) Pink", "e) Purple"],
+            ["36. Which type of pressure plate will increase the strength of the redstone signal emitted for each additional item dropped onto it (until the signal strength is 15)?", "a) Gold", "b) Iron", "c) Quartz", "d) Stone", "e) Wooden"],
+            ["37. Which explosion is the strongest?", "a) Bed in the end/nether", "b) Creeper", "c) End crystal", "d) Ghast fireball", "e) Wither skulls"],
+            ["38. Which mob can only be attacked by melee damage and splash potions?", "a) Blaze", "b) Charged creeper", "c) Enderman", "d) Skeleton", "e) Wither"],
+            ["39. Which block burns forever?", "a) Grass", "b) Lily Pads (above water)", "c) Obsidian", "d) Netherrack", "e) Wooden pressure plate"],
+            ["Question 40 refers to the following list<br><ol><li>doFireTick</li><li>keepInventory</li><li>mobGriefing</li></ol>40. Which of these gamerules is (are) set to true by default?", "a) II only", "b) III only", "c) I and III only", "d) II and III only", "e) I, II, and III"],
+            ["41. Which of the following commands has the same effect as /time set noon?", "a) /time set 6000", "b) /time set 12000", "c) /time set 13000", "d) /time set 18000", "e) /time set 24000"],
+            ["42. Which of these commands requires the lowest op level (0) in multiplayer?", "a) /difficulty", "b) /fill", "c) /list", "d) /seed", "e) /tp"],
+            ["43. Which plant block will break (and drop its item) if a block is placed adjacent to it?", "a) Cactus", "b) Nether wart", "c) Peony", "d) Pumpkin", "e) Sugar cane"],
+            ["44. Which is the only command that can only be executed in single player?", "a) /clear", "b) /kill", "c) /me", "d) /publish", "e) /whitelist"],
+            ["45. Which block forms when water flows into lava?", "a) Clay", "b) Dirt", "c) Glass", "d) Obsidian", "e) Sand"]
+        ];
+        // answer key
+        var answerKey = "153441345325415254544522145432014351334313144";
+
+
+
+
+        window.onload = function(){
+
+            let formData = "<h1>The Minecraft AP Test</h1><h5>For Minecraft version 1.12<br> Test from <a href='https://apminecraft.info' target='_blank'>here.</a></h5><br><br>";
+            for (var i=0; i < questions.length; i += 1){
+                // first setup the text of the question
+                let questionText = "<p>" + questions[i][0] + "</p><br>";
+                
+                //name of the question for reference and later retrieval
+                let questionName = i.toString();
+
+                // collection of question inputs
+                let questionInputs = "";
+
+                for(var j=1; j < questions[i].length; j++){
+                    questionInputs += "<input type=\"radio\" name=\"" + questionName + "\" value=\"" + j.toString() + "\">" + questions[i][j] + "<br>";
+                }
+
+                formData += (questionText + questionInputs)
+
+            }
+
+            // set the form to render
+            document.body.innerHTML = formData + "<div id=\"report\"></div><br><br><br><br><button onclick=\"gradeTest();\">Grade Test</button>";
+        };
+
+
+
+
+
+
+
+
+
+
+        // grade answers
+        function gradeTest(){
+            // get the answers
+            let score = 45;
+            for(let k=0; k < 45; k++) {
+                let getName = k + 1;
+                let getUserAnswer = document.querySelector('input[name="' + k + '"]:checked');
+                if (getUserAnswer != null){
+                    if (getUserAnswer.value != answerKey[k]){
+                        score -= 1;
+                    } 
+                    else if(k == 30) continue;
+                } else {
+                    score -= 1;
+                }
+            }
+            document.getElementById("report").textContent  = "You got " + score + " questions correct out of 45!";
+            alert("You got " + score + " questions correct out of 45!");
+        };
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
