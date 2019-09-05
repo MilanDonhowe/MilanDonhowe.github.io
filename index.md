@@ -13,7 +13,9 @@ When I’m not studying or working on a programming project I typically spend my
 
 ## Want to contact me?
 
-You can send me an [email](mailto:milanaugust@gmail.com) at milanaugust@gmail.com, or you can try putting a message in a glass bottle and throwing it off the west-coast of the US and I might end up stumbling across it.
+If you want to reach me for college related purposes you can shoot me an email at [donhowem@oregonstate.edu](mailto:donhowem@oregonstate.edu).
+
+Otherwise you can reach me at [milanaugust@gmail.com](mailto:milanaugust@gmail.com), or you can try putting a message in a glass bottle and throwing it off the west-coast of the US and I might end up stumbling across it.
 
 
 Since all personal websites must have an inspirational quote here is mine: 
