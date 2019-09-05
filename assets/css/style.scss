@@ -2,9 +2,9 @@
 ---
 // Headers
 
-$header-bg-color: #5775ed !default;
-$header-bg-color-secondary: #57c0ed !default;
-$section-headings-color: #57c0ed !default;
+$header-bg-color: #d73f09 !default;
+$header-bg-color-secondary: #fd7e14 !default;
+$section-headings-color: #fd7e14 !default;
 $body-text-color: #333333 !default;
 $animationTime: 1s;
 
@@ -31,6 +31,9 @@ q {
 	quotes: "“" "”";
 }
 
+a{
+	color: #cc8c28 !default;
+}
 
 
 body {
