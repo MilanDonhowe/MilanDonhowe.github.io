@@ -6,13 +6,10 @@ description: A person on the Internet.
 
 # Hi there!
 
-My name is Milan, and I am Senior at Cleveland High School who likes to partake in some high-stakes hijinks.  Such hijinks include: 
+My name is Milan Donhowe, and I’m a Computer Science student at the College of Engineering at Oregon State University.  This website serves to present my many miscellaneous programming projects which you can check out over on the portfolio tab of this website.
 
-* Being the **National Speech & Debate Coordinator** for the Cleveland Cannibals Speech & Debate team.
-* **Mentoring for an Introduction to Programming class**.
-* Running Cross Country and **developing some neat programs**.  
+When I’m not studying or working on a programming project I typically spend my time playing guitar, practicing Spanish or exploring the Internet.
 
-In my free-time I like to play guitar, practice Spanish, and explore the Internet.
 
 ## Want to contact me?
 
