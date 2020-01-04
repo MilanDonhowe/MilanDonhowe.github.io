@@ -7,7 +7,47 @@ layout: portfolio_layout
 
 
 # **Projects**
-Here is a list of my many projects, which will continue to expand throughout my life.
+Here is a list of some of my programming projects.
+
+
+
+## **Miscellaneous Programming Projects**
+
+
+### **ToyCalc (C)**
+A simple terminal calculator interface written using the NCURSES library C!
+
+![image of the program working](https://raw.githubusercontent.com/MilanDonhowe/ReadmeImages/master/ttty/toyCalc.gif)
+
+You can check out the source code [here](https://github.com/MilanDonhowe/toyCalc).
+
+
+### **Langston's Ant (Python)**
+An implementation of Langston's Ant using Python and Tkinter.  You can find the code [here](https://github.com/MilanDonhowe/ANT)
+
+![image of the program working](https://raw.githubusercontent.com/MilanDonhowe/ANT/master/readme_images/antboy.gif)
+
+
+
+### **Comic Sans Bookmarklet (JavaScript)**
+A small url-embedded block of JavaScript code that changes all the fonts on a given web-page to Comic Sans MS.  You can find the code [here](https://github.com/MilanDonhowe/bookmarklets).
+
+![image of the program working](../assets/images/bookmarklet.gif)
+
+
+###  **Poll-Boy (Python)**
+Poll-Boy is a simple bot that I programmed using the library discord.py to add simple yes or no polls.  The idea was to make a better alternative to straw-polls for Discord servers.
+
+The source code can be found [here](https://github.com/MilanDonhowe/Poll-Boy).
+
+
+![image of the program working](https://github.com/MilanDonhowe/ReadmeImages/raw/master/PollBoyExample.gif)
+
+
+
+
+
+
 
 ## **Video Games**
 
@@ -57,33 +97,6 @@ This was a chrome extension I programmed for my IB Computer Science IA (Internal
 [You can also get this chrome extension on the chrome web-store for free.](https://chrome.google.com/webstore/detail/amazon-price-tracker/npdolbglkedboekdpjcgfnnekcciedki/related)
 And/Or you can check out the [source code here](https://github.com/MilanDonhowe/amazonTrackerIA/tree/master/Donhowe%20Milan%20IA/Forms/Product/amazonTracker)
 
-
-
-
-## **Miscellaneous Programming Projects**
-
-
-### **ToyCalc (C)**
-A simple terminal calculator interface written using the NCURSES library C!  Mostly made to demonstrate my knowledge of the C programming language.
-
-![image of the program working](https://raw.githubusercontent.com/MilanDonhowe/ReadmeImages/master/ttty/toyCalc.gif)
-
-You can check out the source code [here](https://github.com/MilanDonhowe/toyCalc).
-
-
-### **Comic Sans Bookmarklet (JavaScript)**
-A small url-embedded block of JavaScript code that changes all the fonts on a given web-page to Comic Sans MS.  You can find the code [here](https://github.com/MilanDonhowe/bookmarklets).
-
-![image of the program working](../assets/images/bookmarklet.gif)
-
-
-###  **Poll-Boy (Python)**
-Poll-Boy is a simple bot that I programmed using the library discord.py to add simple yes or no polls.  The idea was to make a better alternative to straw-polls for Discord servers.
-
-The source code can be found [here](https://github.com/MilanDonhowe/Poll-Boy).
-
-
-![image of the program working](https://github.com/MilanDonhowe/ReadmeImages/raw/master/PollBoyExample.gif)
 
 
 
