@@ -9,7 +9,7 @@ layout: portfolio_layout
 # **Projects**
 Here is a list of some of my programming projects.
 
-## Single Page Web-Apps
+## **Single Page Web-Apps**
 
 ### **𝓤𝙣𝙞𝙛𝙤𝙧𝙢: Unicode Text Formatter (React)**
 A simple unicode text formatter built off the Create-React-App project template.
