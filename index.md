@@ -11,6 +11,8 @@ My name is Milan, and I’m a Computer Science student at the College of Enginee
 
 This website serves to present my many programming projects which you can check out over on the portfolio tab of this website.
 
+Additionally, you can view my resume [right here](./Resume.pdf).
+
 
 
 ## Want to contact me?

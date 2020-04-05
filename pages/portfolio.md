@@ -9,10 +9,26 @@ layout: portfolio_layout
 # **Projects**
 Here is a list of some of my programming projects.
 
+## Single Page Web-Apps
+
+### *𝓤𝙣𝙞𝙛𝙤𝙧𝙢: Unicode Text Formatter (React)*
+A simple unicode text formatter built off the Create-React-App project template.
+
+![image of uniform unicode text formatter formating text](https://raw.githubusercontent.com/MilanDonhowe/uniform/master/img/unicode.gif)
+
+You can check out the source code [here](https://github.com/MilanDonhowe/uniform) or visit the website yourself [here](https://milandonhowe.github.io/uniform/).
+
+### *Term-card: No data-store note card sharing (Vue/Bulma/LZMA.js)*
+Effectively a hacked version of topaz's paste (a no data-share source code sharing app for advent of code) designed for general purpose notecard sharing.
+
+Basically works by storing the compressed base-64 encoded notecard data in the web-page URL.
+
+![image of term-card working](https://raw.githubusercontent.com/MilanDonhowe/term-card/master/img/termcard.gif)
+
+You can check out the source code [here](https://github.com/MilanDonhowe/term-card) or visit the website yourself [here](https://milandonhowe.github.io/term-card/).
 
 
 ## **Miscellaneous Programming Projects**
-
 
 ### **ToyCalc (C)**
 A simple terminal calculator interface written using the NCURSES library C!
@@ -42,11 +58,6 @@ The source code can be found [here](https://github.com/MilanDonhowe/Poll-Boy).
 
 
 ![image of the program working](https://github.com/MilanDonhowe/ReadmeImages/raw/master/PollBoyExample.gif)
-
-
-
-
-
 
 
 ## **Video Games**
