@@ -27,8 +27,24 @@ Basically works by storing the compressed base-64 encoded notecard data in the w
 
 You can check out the source code [here](https://github.com/MilanDonhowe/term-card) or visit the website yourself [here](https://milandonhowe.github.io/term-card/).
 
+### Biology Portfolio (Bulma)
+A simple but stylish website I made for my final project in my Bio 103: Human Anatony Course during spring term of 2019.
+
+The website was intended to showcase the variety of work I made during the term but also gave me the opportunity to leverage npm in stream lining my development process using a variety of neat tools like Babel, Webpack, Sass & Bulma.
+
+![image of website](../assets/images/bio_handbook.PNG)
+
+You can check out the source code [here](https://github.com/MilanDonhowe/Biology-Portfolio) or visit the website yourself [here](https://web.engr.oregonstate.edu/~donhowem/).
+
 
 ## **Miscellaneous Programming Projects**
+
+### **Computer Chess (C++ w/SDL 2.0)**
+An implementation of 2 player computer chess with a GUI programmed in C++ with usage of the SDL 2.0 Library.
+
+![chess program working](https://raw.githubusercontent.com/MilanDonhowe/chess/master/frontend/images/chessExample.gif)
+
+You can check out the source code [here](https://github.com/MilanDonhowe/chess)
 
 ### **ToyCalc (C)**
 A simple terminal calculator interface written using the NCURSES library C!

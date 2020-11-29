@@ -1,18 +1,15 @@
 ---
 title: Milan Donhowe
-description: A person on the Internet. 
+description: Computer Science Student 
 ---
 
 
 # Hi there!
 
-My name is Milan, and I’m a Computer Science student at the College of Engineering at Oregon State University.  In addition to my studies I spend a good amount of time doing extracurricular activities like competing in **Speech & Debate**, volunteering Sunday mornings at the **RESIstore**, and attending **OSUSEC team meetings**.  But when I’m not doing any of those things I typically spend my time playing guitar, practicing Spanish or exploring the Internet.
+My name is Milan, and I’m a undergraduate student studying Applied Computer Science at the College of Engineering at Oregon State University.  In addition to my studies, I currently work as a University Learning Assistant for CS 162 at OSU. I also spend a good amount of time doing extracurricular activities like competing in **Speech & Debate** and competing in **OSUSEC**’s internal CTF League.  But when I’m not doing any of the above, I typically spend my time reading various the news publications, practicing Spanish or exploring the Internet.
 
 
 This website serves to present my many programming projects which you can check out over on the portfolio tab of this website.
-
-Additionally, you can view my resume [right here](./Resume.pdf).
-
 
 
 ## Want to contact me?
