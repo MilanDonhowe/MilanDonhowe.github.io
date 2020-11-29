@@ -27,7 +27,7 @@ Basically works by storing the compressed base-64 encoded notecard data in the w
 
 You can check out the source code [here](https://github.com/MilanDonhowe/term-card) or visit the website yourself [here](https://milandonhowe.github.io/term-card/).
 
-### Biology Portfolio (Bulma)
+### **Biology Portfolio (Bulma)**
 A simple but stylish website I made for my final project in my Bio 103: Human Anatony Course during spring term of 2019.
 
 The website was intended to showcase the variety of work I made during the term but also gave me the opportunity to leverage npm in stream lining my development process using a variety of neat tools like Babel, Webpack, Sass & Bulma.
