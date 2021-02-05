@@ -1,6 +1,6 @@
 ---
 layout: writeup 
-title: "Test thing"
+title: "Test Post"
 date: 2021-02-05
 ---
 
