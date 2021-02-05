@@ -11,6 +11,7 @@ My name is Milan, and I’m a undergraduate student studying **Applied Computer 
 
 This website serves to present my many programming projects which you can check out over on the portfolio tab of this website.
 
+Alternatively, if you wish to see some of my CTF writeups you can check those out too!
 
 ## Want to contact me?
 

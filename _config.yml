@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: Milan Donhowe
-description: A person on the Internet.
+description: Aspiring Programmer 
+permalink: /writeups/:year/:month/:day/:title
