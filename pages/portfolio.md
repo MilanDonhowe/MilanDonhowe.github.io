@@ -34,7 +34,7 @@ The website was intended to showcase the variety of work I made during the term 
 
 ![image of website](../assets/images/bio_handbook.PNG)
 
-You can check out the source code [here](https://github.com/MilanDonhowe/Biology-Portfolio) or visit the website yourself [here](https://web.engr.oregonstate.edu/~donhowem/).
+You can check out the source code [here](https://github.com/MilanDonhowe/Biology-Portfolio) or visit the website yourself [here](https://web.engr.oregonstate.edu/~donhowem/bio/).
 
 
 ## **Miscellaneous Programming Projects**
