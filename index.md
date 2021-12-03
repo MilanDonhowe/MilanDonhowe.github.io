@@ -6,10 +6,9 @@ description: Computer Science Student
 
 # Hi there!
 
-My name is Milan, and I’m a undergraduate student studying **Applied Computer Science at Oregon State University (OSU)**.  In addition to my studies, I currently work as a **Student Technical Assistant** for the [OSU Office of Sustainability](https://fa.oregonstate.edu/sustainability/about/sustainability-office).  I also spend a good amount of time doing extracurricular activities like competing in **Speech & Debate** and competing in **OSUSEC**’s internal CTF League.
+My name is Milan.  I’m a undergraduate student studying **Applied Computer Science at Oregon State University (OSU)** with the Data Science option.  I currently work part-time as a **Student Software Engineer** for the [OSU Office of Sustainability](https://fa.oregonstate.edu/sustainability/about/sustainability-office).  Outside of academics and work, I compete with **OSU's Speech & Debate Team** and help out as a coach for **OSUSEC**’s internal [CTF League](https://www.osusec.org/ctf-league/).
 
-
-This website serves to present my many programming projects which you can check out over on the portfolio tab of this website.
+This website serves to present some of my personal programming projects which you can check out over on the portfolio tab of this website.
 
 Alternatively, if you wish to see some of my CTF writeups you can check those out too!
 
