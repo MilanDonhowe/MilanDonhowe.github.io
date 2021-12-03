@@ -12,9 +12,9 @@ Let's see if we can hack it!
 ## Investigation
 So the website is a weird jump-game which when we get a game-over prompts us to login to save our score.
  
-Luckily, this prompt isn't sanitized so we can quickly SQL-inject our way past it with a class "`' or 1=1 #`".
+Luckily, this prompt isn't sanitized so we can quickly SQL-inject our way past it with a classic "`' or 1=1 #`".
  
-![image of login prompt](/assets/writeup_imgs/bouncy-box0.png)
+![image of login prompt](/assets/writeup_imgs/bouncybox.png)
  
 Past this prompt we see another user interface listing the players, their login privileges and a button saying "get flag"--which then prompts them to login again, except this prompt isn't susceptible to SQL injection!  From the high score we can determine the username of the website admin "boxy_mcbounce" but we can't figure out their password!
  
