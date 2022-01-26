@@ -1,0 +1,105 @@
+I"�!<h1 id="projects"><strong>Projects</strong></h1>
+<p>Here is a list of some of my programming projects.</p>
+
+<h2 id="single-page-web-apps"><strong>Single Page Web-Apps</strong></h2>
+
+<h3 id="𝓤𝙣𝙞𝙛𝙤𝙧𝙢-unicode-text-formatter-react"><strong>𝓤𝙣𝙞𝙛𝙤𝙧𝙢: Unicode Text Formatter (React)</strong></h3>
+<p>A simple unicode text formatter built off the Create-React-App project template.</p>
+
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/uniform/master/img/unicode.gif" alt="image of uniform unicode text formatter formating text" /></p>
+
+<p>You can check out the source code <a href="https://github.com/MilanDonhowe/uniform">here</a> or visit the website yourself <a href="https://milandonhowe.github.io/uniform/">here</a>.</p>
+
+<h3 id="term-card-no-data-store-note-card-sharing-vuebulmalzmajs"><strong>Term-card: No data-store note card sharing (Vue/Bulma/LZMA.js)</strong></h3>
+<p>Effectively a hacked version of topaz’s paste (a no data-share source code sharing app for advent of code) designed for general purpose notecard sharing.</p>
+
+<p>Basically works by storing the compressed base-64 encoded notecard data in the web-page URL.</p>
+
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/term-card/master/img/termcard.gif" alt="image of term-card working" /></p>
+
+<p>You can check out the source code <a href="https://github.com/MilanDonhowe/term-card">here</a> or visit the website yourself <a href="https://milandonhowe.github.io/term-card/">here</a>.</p>
+
+<h3 id="biology-portfolio-bulma"><strong>Biology Portfolio (Bulma)</strong></h3>
+<p>A simple but stylish website I made for my final project in my Bio 103: Human Anatony Course during spring term of 2019.</p>
+
+<p>The website was intended to showcase the variety of work I made during the term but also gave me the opportunity to leverage npm in stream lining my development process using a variety of neat tools like Babel, Webpack, Sass &amp; Bulma.</p>
+
+<p><img src="../assets/images/bio_handbook.PNG" alt="image of website" /></p>
+
+<p>You can check out the source code <a href="https://github.com/MilanDonhowe/Biology-Portfolio">here</a> or visit the website yourself <a href="https://web.engr.oregonstate.edu/~donhowem/bio/">here</a>.</p>
+
+<h2 id="miscellaneous-programming-projects"><strong>Miscellaneous Programming Projects</strong></h2>
+
+<h3 id="computer-chess-c-wsdl-20"><strong>Computer Chess (C++ w/SDL 2.0)</strong></h3>
+<p>An implementation of 2 player computer chess with a GUI programmed in C++ with usage of the SDL 2.0 Library.</p>
+
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/chess/master/frontend/images/chessExample.gif" alt="chess program working" /></p>
+
+<p>You can check out the source code <a href="https://github.com/MilanDonhowe/chess">here</a></p>
+
+<h3 id="toycalc-c"><strong>ToyCalc (C)</strong></h3>
+<p>A simple terminal calculator interface written using the NCURSES library C!</p>
+
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/ReadmeImages/master/ttty/toyCalc.gif" alt="image of the program working" /></p>
+
+<p>You can check out the source code <a href="https://github.com/MilanDonhowe/toyCalc">here</a>.</p>
+
+<h3 id="langstons-ant-python"><strong>Langston’s Ant (Python)</strong></h3>
+<p>An implementation of Langston’s Ant using Python and Tkinter.  You can find the code <a href="https://github.com/MilanDonhowe/ANT">here</a></p>
+
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/ANT/master/readme_images/antboy.gif" alt="image of the program working" /></p>
+
+<h3 id="comic-sans-bookmarklet-javascript"><strong>Comic Sans Bookmarklet (JavaScript)</strong></h3>
+<p>A small url-embedded block of JavaScript code that changes all the fonts on a given web-page to Comic Sans MS.  You can find the code <a href="https://github.com/MilanDonhowe/bookmarklets">here</a>.</p>
+
+<p><img src="../assets/images/bookmarklet.gif" alt="image of the program working" /></p>
+
+<h3 id="poll-boy-python"><strong>Poll-Boy (Python)</strong></h3>
+<p>Poll-Boy is a simple bot that I programmed using the library discord.py to add simple yes or no polls.  The idea was to make a better alternative to straw-polls for Discord servers.</p>
+
+<p>The source code can be found <a href="https://github.com/MilanDonhowe/Poll-Boy">here</a>.</p>
+
+<p><img src="https://github.com/MilanDonhowe/ReadmeImages/raw/master/PollBoyExample.gif" alt="image of the program working" /></p>
+
+<h2 id="video-games"><strong>Video Games</strong></h2>
+
+<h3 id="back-stabbers-javascript"><strong>Back-Stabbers! (JavaScript)</strong></h3>
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/backstabbers13kb/master/sprites/back.gif" alt="image of my javascript game" />
+A game where you stab simple 8 bit sprites in order to gain points!  This game was made for the 13kJsGames 2019 code golfing competition  where projects were forced to be under 13 kilobytes.  This meant common and popular libraries like JQuery and most game frameworks were banned from being used.  This is the only game I made from ‘scratch’, that is without the help of a game engine like Unity or GameMaker.  <strong>The game placed <a href="https://2019.js13kgames.com/#winners">50th out of 200 entries</a>.</strong>  You can play a slightly more polished version of the game <a href="https://milandonhowe.github.io/backstabbers13kb/">here</a>!</p>
+
+<h3 id="a-slimy-quest-gamemaker-studio-14"><strong>A Slimy Quest (Gamemaker Studio 1.4)</strong></h3>
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/HybridAdventure/master/sprites/gifs/playerREADME%20(1).gif" alt="Image of Slimy Character falling down" /></p>
+
+<p>A mix of a basic platforming and pong game.  Made in 1 month for the 2018 GitHub GameOFF.  <strong>My game placed 19th overall out of 328 entries</strong>.  Most notably I also scored 11th place for the category of Theme Interpretation.  The Game’s source code may be <a href="https://github.com/MilanDonhowe/SlimyQuest">viewed here</a>, the entry for the GameOff can be <a href="https://itch.io/jam/game-off-2018/rate/334522">viewed here</a> and if you wish, <a href="https://milandonhowe.itch.io/a-slimy-quest">you can play it here</a>.</p>
+
+<h3 id="dolts-home-unity-3d"><strong>Dolt’s Home (Unity 3D)</strong></h3>
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/ReadmeImages/master/DoltImages/dolt_1.gif" alt="Image of Dolts Home" /></p>
+
+<p>A 3D game made over the course of my Sophomore year using Blender, Unity, BFXR and a couple more tools/libraries.  The project can be <a href="https://github.com/MilanDonhowe/DoltsHome">found here</a>.</p>
+
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/ReadmeImages/master/DoltImages/dolt_2.png" alt="image of tree" /></p>
+
+<h3 id="bear-world-gamemaker-studio-14"><strong>Bear World! (Gamemaker Studio 1.4)</strong></h3>
+<p>A simple platforming game I made Freshman year for my Introduction to Programming Class.  Although it hasn’t aged particularly well and I would recommend playing A Slimy Quest over it, <a href="https://milandonhowe.github.io/beargame/">you can still play this game here!</a></p>
+
+<h2 id="chrome-extensions"><strong>Chrome Extensions</strong></h2>
+
+<h3 id="student-selector"><strong>Student Selector</strong></h3>
+
+<p>A chrome extension which randomly selects a value from a list given by the user.  It was built to help Teachers randomly select students in a classroom without having to use those pesky Popsicle sticks.</p>
+
+<p><img src="../assets/images/chromeExtension.PNG" alt="Image of the chrome extension" /></p>
+
+<p><a href="https://chrome.google.com/webstore/detail/student-randomizer/lcipncfbfemopganndembnmjjnhbaomk">You can get it today for free at the Chrome web-store!</a>
+And/Or you can check out the <a href="https://github.com/MilanDonhowe/studentSelect">source code here</a></p>
+
+<h3 id="amazon-price-tracker"><strong>Amazon Price Tracker</strong></h3>
+<p>This was a chrome extension I programmed for my IB Computer Science IA (Internal Assessment).  It simply tracks the price of amazon products and notifies the user when a new product has been found.</p>
+
+<p><img src="../assets/images/ProductAmazon.PNG" alt="image of the chrome extension" />
+<img src="../assets/images/ProductAmazon2.PNG" alt="another image of the chrome extension" /></p>
+
+<p><a href="https://chrome.google.com/webstore/detail/amazon-price-tracker/npdolbglkedboekdpjcgfnnekcciedki/related">You can also get this chrome extension on the chrome web-store for free.</a>
+And/Or you can check out the <a href="https://github.com/MilanDonhowe/amazonTrackerIA/tree/master/Donhowe%20Milan%20IA/Forms/Product/amazonTracker">source code here</a></p>
+
+:ET

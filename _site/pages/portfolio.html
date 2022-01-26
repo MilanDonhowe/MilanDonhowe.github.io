@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Programming Portfolio | Milan Donhowe</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Programming Portfolio" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A detailed list of projects I’ve worked on" />
+<meta property="og:description" content="A detailed list of projects I’ve worked on" />
+<link rel="canonical" href="http://localhost:4000/pages/portfolio" />
+<meta property="og:url" content="http://localhost:4000/pages/portfolio" />
+<meta property="og:site_name" content="Milan Donhowe" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Programming Portfolio" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/pages/portfolio","headline":"Programming Portfolio","@type":"WebPage","description":"A detailed list of projects I’ve worked on","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=18b4c38f9de2d9b04673736a9170fbd6aedac8e9">
+	<script src="/assets/javascript libraries/scrollreveal.min.js"></script>
+  </head>
+  <body>
+  
+	<!--<script async src="../assets/javascript/urlAnimate.js">
+    </script>-->
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Milan Donhowe</h1>
+      <h2 class="project-tagline">Programming Person</h2>
+	  <a href="../index.html" class="btn">Home</a>
+	  <a href="portfolio.html" class="btn">Portfolio</a>
+    <a href="../writeups/index.html" class="btn">CTF Writeups</a>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="overview"><strong>Overview</strong></h1>
+<p>This is a list of my most notable projects which I’ve worked on in the past few years outside of my academic work..</p>
+
+<h1 id="work-projects-sustainability-office">Work Projects (Sustainability Office)</h1>
+<p>These are the public projects I’ve worked on while working as a part-time student software developer.</p>
+
+<h2 id="sustainability-map"><strong>Sustainability Map</strong></h2>
+<p>This is an interactive infographic map of the OSU Corvallis campus which I mostly wrote from the ground-up using Vue-CLI with leaflet. You can view the app <a href="https://dashboard.sustainability.oregonstate.edu/sustainability_map">here</a> and the source code <a href="https://github.com/OSU-Sustainability-Office/sustainability_map">here</a>.</p>
+
+<p><img src="../assets/images/susMap.PNG" alt="Image of sustainability map" /></p>
+
+<p>Some cool notes about this project:</p>
+<ul>
+  <li>Fetches GeoJSON building geometry at build-time through OpenStreetMaps’ Overpass API.</li>
+  <li>Uses a centralized Vuex store to manage building features</li>
+  <li>Is displayed as a page on the Energy Dashboard through an iframe!</li>
+</ul>
+
+<h2 id="energy-dashboard"><strong>Energy Dashboard</strong></h2>
+<p>A large serverless application developed by prior student employees which I’ve been maintaining and extending for the last year or so. You can view the application <a href="https://dashboard.sustainability.oregonstate.edu/">here</a> and it’s source code <a href="https://github.com/OSU-Sustainability-Office/energy-dashboard">here</a>.
+<img src="../assets/images/Dashboard.PNG" alt="Image of graph of solar data on Dashboard" />
+Here’s an itemized list of some of the contributes I’ve made towards the project:</p>
+<ul>
+  <li>Added dockerized API unit-tests in Jest to the Continuous Integration pipeline</li>
+  <li>Migrated client-cache from localStorage API to IndexedDB</li>
+  <li>Added support for Solar Arrays across Campus (wrote automated web-scrapers which fetch and upload data)</li>
+  <li>Optimized the application to “batch” data-requests (previously requested data for each meter–for certain buildings that meant 30 requests for 1 building)</li>
+  <li>Updated front-end documentation</li>
+  <li>Fixed miscellaneous bugs (zero reading error, local CORS testing error)</li>
+</ul>
+
+<h1 id="personal-projects">Personal Projects</h1>
+
+<h2 id="rref-calculator-vue"><strong>RREF Calculator (Vue)</strong></h2>
+<p>This is a simple RREF calculator which I made to help me out in my Linear Algebra class back early 2021.</p>
+
+<p><img src="../assets/images/rref.PNG" alt="image of my rref calculator" /></p>
+
+<p>You can check-out the source code <a href="https://github.com/MilanDonhowe/rref">here</a>–or alternatively visit the web-app <a href="https://main.d1ockk36rcpxaq.amplifyapp.com/">here</a>.</p>
+
+<h2 id="𝓤𝙣𝙞𝙛𝙤𝙧𝙢-unicode-text-formatter-react"><strong>𝓤𝙣𝙞𝙛𝙤𝙧𝙢: Unicode Text Formatter (React)</strong></h2>
+<p>A simple unicode text formatter built off the Create-React-App project template.</p>
+
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/uniform/master/img/unicode.gif" alt="image of uniform unicode text formatter formating text" /></p>
+
+<p>You can check out the source code <a href="https://github.com/MilanDonhowe/uniform">here</a> or visit the website yourself <a href="https://milandonhowe.github.io/uniform/">here</a>.</p>
+
+<h2 id="term-card-no-data-store-note-card-sharing-vuebulmalzmajs"><strong>Term-card: No data-store note card sharing (Vue/Bulma/LZMA.js)</strong></h2>
+<p>Effectively a hacked version of topaz’s paste (a no data-share source code sharing app for advent of code) designed for general purpose notecard sharing.</p>
+
+<p>Basically works by storing the compressed base-64 encoded notecard data in the web-page URL.</p>
+
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/term-card/master/img/termcard.gif" alt="image of term-card working" /></p>
+
+<p>You can check out the source code <a href="https://github.com/MilanDonhowe/term-card">here</a> or visit the website yourself <a href="https://milandonhowe.github.io/term-card/">here</a>.</p>
+
+<h2 id="biology-portfolio-bulma"><strong>Biology Portfolio (Bulma)</strong></h2>
+<p>A simple but stylish website I made for my final project in my Bio 103: Human Anatomy Course during spring term of 2019.</p>
+
+<p>The website was intended to showcase the variety of work I made during the term but also gave me the opportunity to leverage npm in stream lining my development process using a variety of neat tools like Babel, Webpack, Sass &amp; Bulma.</p>
+
+<p><img src="/assets/images/bio_handbook.PNG" alt="image of website" /></p>
+
+<p>You can check out the source code <a href="https://github.com/MilanDonhowe/Biology-Portfolio">here</a> or visit the website yourself <a href="https://web.engr.oregonstate.edu/~donhowem/bio/">here</a>.</p>
+
+<h2 id="computer-chess-c-wsdl-20"><strong>Computer Chess (C++ w/SDL 2.0)</strong></h2>
+<p>An implementation of 2 player computer chess with a GUI programmed in C++ with usage of the SDL 2.0 Library.</p>
+
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/chess/master/frontend/images/chessExample.gif" alt="chess program working" /></p>
+
+<p>You can check out the source code <a href="https://github.com/MilanDonhowe/chess">here</a></p>
+
+<h1 id="smallerolder-projects-made-2-years-ago">Smaller/Older Projects (made &gt;2 years ago)</h1>
+<p>These are some older projects made either during high school or my freshman year of college which I’m including here for my own self interest, but aren’t reflective of my current skill set.</p>
+
+<h3 id="poll-boy-python"><strong>Poll-Boy (Python)</strong></h3>
+<p>Poll-Boy is a simple bot that I programmed using the library discord.py to add simple yes or no polls.  The idea was to make a better alternative to straw-polls for Discord servers.</p>
+
+<p>The source code can be found <a href="https://github.com/MilanDonhowe/Poll-Boy">here</a>.</p>
+
+<p><img src="https://github.com/MilanDonhowe/ReadmeImages/raw/master/PollBoyExample.gif" alt="image of the program working" /></p>
+
+<h3 id="back-stabbers-javascript"><strong>Back-Stabbers! (JavaScript)</strong></h3>
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/backstabbers13kb/master/sprites/back.gif" alt="image of my javascript game" />
+A game where you stab simple 8 bit sprites in order to gain points!  This game was made for the 13kJsGames 2019 code golfing competition  where projects were forced to be under 13 kilobytes.  This meant common and popular libraries like JQuery and most game frameworks were banned from being used.  This is the only game I made from ‘scratch’, that is without the help of a game engine like Unity or GameMaker.  <strong>The game placed <a href="https://2019.js13kgames.com/#winners">50th out of 200 entries</a>.</strong>  You can play a slightly more polished version of the game <a href="https://milandonhowe.github.io/backstabbers13kb/">here</a>!</p>
+
+<h3 id="a-slimy-quest-gamemaker-studio-14"><strong>A Slimy Quest (Gamemaker Studio 1.4)</strong></h3>
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/HybridAdventure/master/sprites/gifs/playerREADME%20(1).gif" alt="Image of Slimy Character falling down" /></p>
+
+<p>A mix of a basic platforming and pong game.  Made in 1 month for the 2018 GitHub GameOFF.  <strong>My game placed 19th overall out of 328 entries</strong>.  Most notably I also scored 11th place for the category of Theme Interpretation.  The Game’s source code may be <a href="https://github.com/MilanDonhowe/SlimyQuest">viewed here</a>, the entry for the GameOff can be <a href="https://itch.io/jam/game-off-2018/rate/334522">viewed here</a> and if you wish, <a href="https://milandonhowe.itch.io/a-slimy-quest">you can play it here</a>.</p>
+
+<h3 id="dolts-home-unity-3d"><strong>Dolt’s Home (Unity 3D)</strong></h3>
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/ReadmeImages/master/DoltImages/dolt_1.gif" alt="Image of Dolts Home" /></p>
+
+<p>A 3D game made over the course of my sophomore year of High School using Blender, Unity, BFXR and a couple more tools/libraries.  The project can be <a href="https://github.com/MilanDonhowe/DoltsHome">found here</a>.</p>
+
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/ReadmeImages/master/DoltImages/dolt_2.png" alt="image of tree" /></p>
+
+<h3 id="bear-world-gamemaker-studio-14"><strong>Bear World! (Gamemaker Studio 1.4)</strong></h3>
+<p>A simple platforming game I made freshman year of High School for my Introduction to Programming Class.  Although it hasn’t aged particularly well, <a href="https://milandonhowe.github.io/beargame/">you can still play this game here!</a></p>
+
+<h3 id="toycalc-c"><strong>ToyCalc (C)</strong></h3>
+<p>A simple terminal calculator interface written using the NCURSES library C!</p>
+
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/ReadmeImages/master/ttty/toyCalc.gif" alt="image of the program working" /></p>
+
+<p>You can check out the source code <a href="https://github.com/MilanDonhowe/toyCalc">here</a>.</p>
+
+<h3 id="langstons-ant-python"><strong>Langston’s Ant (Python)</strong></h3>
+<p>An implementation of Langston’s Ant using Python and Tkinter.  You can find the code <a href="https://github.com/MilanDonhowe/ANT">here</a></p>
+
+<p><img src="https://raw.githubusercontent.com/MilanDonhowe/ANT/master/readme_images/antboy.gif" alt="image of the program working" /></p>
+
+<h3 id="comic-sans-bookmarklet-javascript"><strong>Comic Sans Bookmarklet (JavaScript)</strong></h3>
+<p>A small url-embedded block of JavaScript code that changes all the fonts on a given web-page to Comic Sans MS.  You can find the code <a href="https://github.com/MilanDonhowe/bookmarklets">here</a>.</p>
+
+<p><img src="/assets/images/bookmarklet.gif" alt="image of the program working" /></p>
+
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/MilanDonhowe/MilanDonhowe.github.io">MilanDonhowe.github.io</a> is maintained by <a href="https://github.com/MilanDonhowe">MilanDonhowe</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

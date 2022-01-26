@@ -1,0 +1,37 @@
+I"�<h1 id="problem">Problem</h1>
+
+<p>For this challenge we start off with nothing more than a tar file named “CTG-2020-10-0001.tar.gz” containing a pdf, a text file containing a long list of words, and a file-system in the form of an .iso file.  The pdf file contains some neat lore but the real interesting stuff is in the .iso file which we can mount with a few commands easily attainable through a <a href="https://www.cyberciti.biz/tips/how-to-mount-iso-image-under-linux.html">quick google search</a>.</p>
+
+<p>Inside the file-system we find a mysterious file called <code class="language-plaintext highlighter-rouge">rhodgson.kdbx</code> which we can quickly identify through <code class="language-plaintext highlighter-rouge">file rhodgson.kdbx</code> which returns:
+ <code class="language-plaintext highlighter-rouge">rhodgson.kdbx: Keepass password database 2.x KDBX</code></p>
+
+<p>This is a database file for keepass, a popular password manager.  We can actually open the database file directly using <code class="language-plaintext highlighter-rouge">kpcli</code>, but without the user password we’re left to dry.  We <em>could</em> try a brute forcing program but without a specific topical list of potential passwords, it wouldn’t be particularly efficient.</p>
+
+<h2 id="using-john">Using JOHN</h2>
+
+<p>Luckily, we DO have a list of potential passwords through the word list file mentioned earlier and packaged in the tar file.  Using (John-the-Ripper)[https://github.com/openwall/john], a popular open-source password cracking utility which if still from source allows us to quickly crack the database’s password.</p>
+
+<p>First we run a utility script included with john to convert the .kdbx into a format john likes via <code class="language-plaintext highlighter-rouge">/src/john/run/keepass2john rhodgson.kdbx &gt; johnableRhodgson</code>  After that we can quickly supply the word-list to John and let the program do the heavy lifting via: <code class="language-plaintext highlighter-rouge">~/src/john/run/john --wordlist="./CTG-2020-10-0001/CTG_STANDARD_WORDLIST.txt" johnableRhodgson</code>.</p>
+
+<p>Afterwards we can run john directly on the database file to tell us the passwords:
+<code class="language-plaintext highlighter-rouge">~/src/john/run/john --show johnableRhodgson</code> which then informs us of the user’s passwords.</p>
+
+<p>Now that we’ve cracked the password hashes we can directly view the applicable passwords for the keepass database: <code class="language-plaintext highlighter-rouge">~/src/john/run/john --show johnableRhodgson</code></p>
+
+<p>And Hazahh, we find Ryan Hodgson’s keepass username &amp; password combo of <code class="language-plaintext highlighter-rouge">rhodgson:1hodgson</code>.  Honestly, probably could have just guessed it.</p>
+
+<h2 id="kpcli">KPCLI</h2>
+
+<p>Now when we open the database file using <code class="language-plaintext highlighter-rouge">kpcli</code> and we can open the db via <code class="language-plaintext highlighter-rouge">open rhodgson.kdbx</code> which allows us to quickly run through the database file and stumble upon their flag box password (accessed via <code class="language-plaintext highlighter-rouge">show 0 -f</code>) which gives us an IP address of some linux box along with their username and password for the system.</p>
+
+<h2 id="sshing-into-linux-box--privilege-escalation">SSHing into Linux Box &amp; Privilege Escalation</h2>
+
+<p>Upon accessing the linux box via the IP and credentials found in the <code class="language-plaintext highlighter-rouge">.kdbx</code> we can quickly spot the flag file named <code class="language-plaintext highlighter-rouge">.flag</code>–however we’re unable to access the file with our current user privileges.  A quick trick to try and get around file permissions is through abusing a SUID permission (e.g. a sticky-bit on a binary which allows any user to run the program with a set of permissions).  We can quickly query the file system to see if there’s any potential program which has the sticky-bit set that could allow us to read the file via <code class="language-plaintext highlighter-rouge">find / -perm -4000 2&gt;/dev/null</code> or <code class="language-plaintext highlighter-rouge">find / -perm -u=s 2&gt;/dev/null</code>.</p>
+
+<p>Sure enough, we can spot that vim has the sticky bit set!  And upon trying to load the file with vim, we retrieve the flag text.</p>
+
+<h2 id="lessons-learned">Lessons Learned:</h2>
+
+<p>This challenge introduced me to a really scary but powerful tool in John-the-Ripper along with the conceptual privilege escalation seen in the sticky-bit exploit at the end.  Some big take-aways from this challenge are the efficiency of john-the-ripper and the genre of privilege exploits on Linux systems.</p>
+
+:ET
