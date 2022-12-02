@@ -1,3 +1,0 @@
-I"�<h1 id="problem">Problem</h1>
-<p>For this problem we’re given a situation where a malicious program was detected on a victim’s PC and provided a zip file containing a pcap (<code class="language-plaintext highlighter-rouge">evidence.pcap</code>) and a bash script (<code class="language-plaintext highlighter-rouge">mal.sh</code>).  Our goal is to determine what the malware did and recover the exfiltrated flag.</p>
-:ET
