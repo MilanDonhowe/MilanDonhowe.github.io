@@ -5,9 +5,8 @@ layout: portfolio_layout
 ---
  
 # **Overview**
-This is a list of my most notable projects which I've worked on in the past few years outside of my academic work..
- 
- 
+Here is a collection of publicly-viewable projects I've worked on in the past few years.
+
 # Work Projects (Sustainability Office)
 These are the public projects I've worked on while working as a part-time student software developer.
  
@@ -32,9 +31,8 @@ Here's an itemized list of some of the contributes I've made towards the project
  - Optimized the application to "batch" data-requests (previously requested data for each meter--for certain buildings that meant 30 requests for 1 building)
  - Updated front-end documentation
  - Fixed miscellaneous bugs (zero reading error, local CORS testing error)
- 
- 
-# Personal Projects
+
+# Personal Web-Apps
  
 ## **RREF Calculator (Vue)**
 This is a simple RREF calculator which I made to help me out in my Linear Algebra class back early 2021.

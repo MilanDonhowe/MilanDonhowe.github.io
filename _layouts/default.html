@@ -23,19 +23,17 @@
   <body>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+	  <img src="{{site.avatar}}" alt="Avatar" style="vertical-align:middle;width:200px;height:200px;border-radius:50%;border-width:2px;border-style:solid;"/>
+	  <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 	  <a href="index.html" class="btn">Home</a>
+	  <a href="assets/resume.pdf" class="btn">Resume</a>
 	  <a href="pages/portfolio.html" class="btn">Portfolio</a>
-    <a href="writeups/index.html" class="btn">CTF Writeups</a>
+      <a href="writeups/index.html" class="btn">CTF Write-ups</a>
     </header>
-  
 
-
-
-
-    <main id="content" class="main-content" role="main">
-      {{ content }}
+    <main id="content" class="main-content" role="main"> 
+	  {{ content }}
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
