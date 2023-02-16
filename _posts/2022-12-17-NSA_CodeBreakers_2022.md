@@ -1,6 +1,6 @@
 ---
 layout: writeup
-title: NSA CodeBreakes 2022 
+title: NSA CodeBreakers 2022 
 date: 2022-12-17
 ---
 
@@ -93,18 +93,18 @@ Which yielded `WAJjgllXMhBFzTcIHdy2vblAGNSEBSTz` as our secret, with this we can
 From the admin panel we uncovered an LFI vulnerability from the `fetchlog` backend route which let me exfil the sqlite3 database they were using for both user accounts & storing encryption keys.
 
 Example LFI:
-```https://uxtaghubxevjkqfm.ransommethis.net/vcyttbrpfwvlosak/fetchlog?log=../../../etc/passwd``` The NSA people didn't let us exfil /etc/passwd sadly ;-;.  We could get the relevant databases and keyMaster binary though--which happend to be written in go... sadge.
+```https://uxtaghubxevjkqfm.ransommethis.net/vcyttbrpfwvlosak/fetchlog?log=../../../etc/passwd``` The NSA people didn't let us exfil /etc/passwd sadly ;-;.  We could get the relevant databases and keyMaster binary though--which happend to be written in go (not fun to reverse!).
 
 The challenge description tells us that the binary uses a key-encrypting-key to store the keys in the database.  Unfortunately, go binaries suck to reverse engineer.  I could load it up in GDB but it was stripped, and ghidra produces somewhat legible output but not a lot.
 
-Luckily, I found some ghidra scripts online which did a decent-enough job at recovering function names which made it a little easier to infer what certain functions did in the go binary.
+Luckily, I found some [ghidra scripts online](https://github.com/getCUJO/ThreatIntel/tree/master/Scripts/Ghidra) which did a decent-enough job at recovering function names which made it a little easier to infer what certain functions did in the go binary.
 
 My process involved setting breakpoints from the ghidra decomp. and then looking around in memory with GDB for what might end up being the encryption keys.  I would run the keyMaster binary with some mock input to generate a plaintext key, try and locate where it got generated and eventually found the 64-bit encryption key which they were using for their standard keys--which turned out to be UUIDs!
 
-The key encrypting key in my case ended up being "ff2a830cf4d1d9c04ee41edad34220c98666a75eb9eef035d7709c1ae9b9519309d63ed860f09c92c61805148f9b9350fc4c09722c4490ea2e198567c789cbcf".
+The key encrypting key in my case ended up being `"ff2a830cf4d1d9c04ee41edad34220c98666a75eb9eef035d7709c1ae9b9519309d63ed860f09c92c61805148f9b9350fc4c09722c4490ea2e198567c789cbcf"`.
 
-From here I could decrypt any of the encryption keys with a nice little cyber-chef recipe:
-https://icyberchef.com/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)AES_Decrypt(%7B'option':'Base64','string':'/yqDDPTR2cBO5B7a00IgyYZmp1657vA113CcGum5UZM%3D'%7D,%7B'option':'Hex','string':'79bc459a0be54f31ab28a790c1984c47'%7D,'CBC/NoPadding','Raw','Raw',%7B'option':'Hex','string':''%7D,%7B'option':'Hex','string':''%7D)&input=U0JLdUFjQUJXSnZ1b3pjaTBGRGJSb0FzU091WnpZcC9KeVVHKy9GTnVEMytBNzFKbVg4Y0lkOS9wK3hkSHZXY0VUYWtkcFBLQW1QeWE5U0FzT1gzMEE9PQ
+From here I could decrypt any of the encryption keys with a [nice little cyber-chef recipe](
+https://icyberchef.com/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)AES_Decrypt(%7B'option':'Base64','string':'/yqDDPTR2cBO5B7a00IgyYZmp1657vA113CcGum5UZM%3D'%7D,%7B'option':'Hex','string':'79bc459a0be54f31ab28a790c1984c47'%7D,'CBC/NoPadding','Raw','Raw',%7B'option':'Hex','string':''%7D,%7B'option':'Hex','string':''%7D)&input=U0JLdUFjQUJXSnZ1b3pjaTBGRGJSb0FzU091WnpZcC9KeVVHKy9GTnVEMytBNzFKbVg4Y0lkOS9wK3hkSHZXY0VUYWtkcFBLQW1QeWE5U0FzT1gzMEE9PQ)
 
 # Task 9: BRUTE FORCE
 
@@ -299,7 +299,7 @@ reverted_timestamp = ns_100_to_sec(timestamp - 0x01b21dd213814000)
 iteration = 0
 delta = -1 # 1 ms in 100 nanoseconds
 # Starts at 38:16
-# If we get to 37:50 it's fucked
+# If we get to 37:50 there's something wrong with this approach
 
 max_revert = ns_100_to_sec((timestamp+(max_iterations*delta)) - 0x01b21dd213814000)
 
