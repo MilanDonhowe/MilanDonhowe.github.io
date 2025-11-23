@@ -1,18 +1,11 @@
----
-title: Milan Donhowe
-description: Friendly Neighborhood Hacker
----
-# About me
+# Milan Donhowe
+Hey there!
 
-My name's Milan, and this is my perpetually out-of-date github.io website.
+My name's Milan, I build and, sometimes, break software.
 
 I have a lot of interests in the computer-science space, and so my expertise and skillset is a bit all over the place.
 
-This website largely serves as a location for my CTF write-ups (CTFs are basically gamified hacking challenges) which you can check out over at the [CTF Writeups Tab](/writeups/index.html) of this website.
+You can checkout my silly little projects on my github [https://github.com/MilanDonhowe](https://github.com/MilanDonhowe).
 
-## Social Media & Contact Information:
- - [LinkedIn](https://www.linkedin.com/in/milan-donhowe-571341176/)
- - [GitHub](https://github.com/MilanDonhowe)
- - [Email](mailto:donhowem@oregonstate.edu)
-
-
+## Contact Me
+- [Click this to email me!](mailto:milanaugust+personal@gmail.com)

@@ -1,5 +1,4 @@
-theme: jekyll-theme-cayman
 title: Milan Donhowe
-description: Friendly Neighborhood CTFer
+description: Engineering, and Reverse-Engineering, Software
 permalink: /writeups/:year/:month/:day/:title
 avatar: /assets/images/MilanDonhowe.jpg
